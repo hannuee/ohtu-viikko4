@@ -95,7 +95,7 @@ public class KauppaTest {
 
         // tarkistetaan että tässä vaiheessa viitegeneraattorin metodia seuraava()
         // on kutsuttu kerran
-        verify(mockViite, times(2)).seruaava();
+        verify(mockViite, times(1)).seruaava();
 
         kauppa.aloitaOstokset();
         kauppa.lisaaOstos(1);
